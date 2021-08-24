@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;1,500&family=Patrick+Hand&display=swap');
+            :root{
+                /* Colores principales */
+                --p: #004d40;
+                --p-light: #39796b;
+                --p-dark: #00251a;
+                --s: #df6c00;
+                --s-light: #ff9c3e;
+                --s-dark: #a63e00;
+            }
+            body{
+                margin: 0;
+                font-family: 'Patrick Hand', cursive;
+            }
+            header{
+                margin: auto;
+                position: fixed;
+                background-color: var(--s);
+                z-index: 1000;
+            }
+            header h1{
+                margin-left: 40px;
+                text-transform: uppercase;
+            }
+            .cajaR{
+                height: 140px;
+                background-color: transparent;
+            }
+            .cont{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            header, .cont{
+                width: 80%;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            .tarj{
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                justify-items: center;
+                border: 1px solid var(--p-dark);
+                border-radius: 5px;
+                width: 320px;
+                /* background: rgba(0,0,0,0.15); */
+                box-shadow: 0.5px 0.2px 2px var(--p-dark);
+            }
+            .titulo{
+                width: 100%;
+                color: #fff;
+                font-size: 2.1em;
+                background: var(--p);
+                font-family: 'Glory', sans-serif;
+                transition: all 450ms;
+            }
+            .cont-tarjeta{
+                width: 90%;
+                /* background: red; */
+            }
+            #nameEvidencia{
+                font-size: 1.9em;
+                margin: 6px 10px;
+                font-variant: small-caps;
+                line-height: 30px;
+            }
+            .cont-tarjeta span{
+                display: block;
+                margin-left: 15px;
+            }
+            button{
+                padding: 8px;
+                margin: 15px 0;
+                border: 1px solid var(--s-dark);
+                border-radius: 5px;
+                background: var(--s);
+            }
+            button a{
+                font-family: 'Glory', sans-serif;
+                font-weight: bold;
+                font-size: 1.3em;
+                text-decoration: none;
+                color: var(--s-dark);
+            }
+            button:hover{
+                border-color: var(--s);
+                background: var(--s-light);
+            }
+            .bibliografia{
+                margin-top: 20px;
+                position: relative;
+                background: #000;
+                color: #fff;
+                padding: 20px 30px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                line-height: 15px;
+            }
+            .bibliografia .copyright{
+                font-size: 1.7em;
+            }
+            .enlaces p a{
+                text-decoration: none;
+            }
+            @media screen and (max-width:768px) {
+                header{
+                    width: 100%;
+                }
+                header h1{
+                    margin-left: 20px;
+                }
+                .tarj{
+                    width: 90%;
+                }
+            }
+        </style>
+            <title>Portafolio Evidencias</title>
+    </head>
+    <body>
+        <header>
+            <h1>portafolio de evidencias sena</h1>
+        </header>
+       
+            <div class="cajaR"></div>
+            
+        <div class="cont">
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #1</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">Estudio de caso: La oportunidad de formarme</h4>
+                    <span class="identificador">Id: 153564047</span>
+                    <span class="data">Fecha: 2021-08-21 19:36:33</span>
+                </div>
+                <button type="submit"><a href="http://sena.territorio.la/tarea_tt.php?tarea=138858337" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #2</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">Representación gráfica: Reconociendo mi ambiente formativo </h4>
+                    <span class="identificador">Id: 153586812</span>
+                    <span class="data">Fecha: 2021-08-21 20:28:39</span>
+                </div>
+                <button type="submit"><a href="http://sena.territorio.la/tarea_tt.php?tarea=138858347
+                    " target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #3</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">Relato: Trabajo colaborativo</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #4</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">Portafolio: Mis evidencias</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #5</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">Resumen: Proyección de elección alternativa productiva</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #6</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP01-AA1-EV01. Identificación de la necesidad de sistemas de información</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #7</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP01-AA1-EV02. Estructuración del proyecto del sistema en desarrollo</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #8</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP01-AA1-EV04. Levantamiento del mapa de procesos del sistema en desarrollo</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #9</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP01-AA2-EV05. Especificación de los requerimientos funcionales y no funcionales del sistema </h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #10</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP01-AA1-EV07. Identificación del proceso de software para el proyecto de desarrollo en curso</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #11</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP01-AA1-EV08. Transversal Ética. Taller Usabilidad del bien visión ética</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #12</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP01-AA2-EV09. Inglés - Postulación para práctica laboral. Filling out an intern.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #13</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP01-AA2-EV10. Transversal - Emprendimiento. Matriz DOFA, mi proyecto de vida</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #14</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP02-AA3-EV02. Especificación de requerimientos con casos de uso</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #15</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP02-AA3-EV04. Determinación de las tecnologías de hardware, software y servicios </h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #16</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP02-AA3-EV05. Transversal - Matriz de Riesgo. (Identificación de peligros, valoración</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #17</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP02-AA3-EV06. Transversal - Brochure Interactivo con planteamiento de coordinación motriz fin.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #18</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP03-AA4-EV02. Especificación del modelo conceptual del sistema de información a desarr</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #19</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP03-AA4-EV04. Inglés - Elaboración de resúmenes para comprender textos bá.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #20</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP03-AA4-EV05. Inglés - Conversación sobre gustos, intereses y preferencias</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #21</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP03-AA4-EV07. Transversal - Escrito. Trabajo en equipo y resolución de conflictos</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #22</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP04-AA5-EV02. Elaboración del prototipo del sistema de información a desarrollar</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #23</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP04-AA5-EV04. Elaboración de términos de referencia </h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #24</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP04-AA5-EV05. Inglés - Elaboración de un manual técnico</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #25</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP04-AA5-EV06. Transversal - Ensayo la importancia de la comunicación asertiva .</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #26</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP04-AA5-EV08. Transversal. Estudio de caso DISTRIMAY</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #27</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP05-AA6-EV02. Diseño de arquitectura de software y hardware para el sistema de informaci&oacu.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #28</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP05-AA6-EV03. Identificación de los puntos críticos del sistema de información </h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #29</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP05-AA6-EV04. Elaboración de cláusulas técnicas para contratación del ha</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+            
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #30</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP05-AA6-EV06. Inglés - Construcción de un glosario técnico en inglés par</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #31</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP05-AA6-EV07. Transversal - Estudio de caso. Residuos posconsumo</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #32</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP06-AA7-EV02. Lenguaje Estructurado de Consultas SQL.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #33</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP06-AA7-EV03. Diseño y desarrollo de la interfaz web del proyecto en curso</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #34</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP06-AA7-EV06. Inglés Taller. Reconociendo el lugar de trabajo.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #35</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP07-AA8-EV02. Codificación de los módulos del sistema de información en el leng..</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #36</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP07-AA8-EV04. Transversal - Cartilla: Técnica</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #37</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP08-AA9-EV02. Informe cumplimiento de la negociación tecnológica</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #38</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP08-AA9-EV03. Determinar cumplimiento de calidad.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #39</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP08-AA9-EV05. Inglés - Taller de aplicación de estrategias para la comprensión.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #40</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP08-AA9-EV06. Inglés - Presentación oral. Mi idea de proyecto.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #41</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP09-AA10-EV02. Diseño y ejecución de plan de pruebas del sistema de información</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #42</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP09-AA10-EV03. Elaboración del manual de usuario y manual de configuración del sistema.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #43</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP09-AA10-EV04. Diseño del plan de mantenimiento del sistema de información ...</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #44</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP09-AA10-EV06. Inglés - Sesión en línea. Intercambios, opiniones y debates </h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+            <div class="tarj">
+                <h2 class="titulo">Evidencia #45</h2>
+                <div class="cont-tarjeta">
+                    <h4 id="nameEvidencia">AP10-AA11-EV02. Elaboración del informe administrativo y técnico del sistema de informa.</h4>
+                    <span class="identificador">Id: </span>
+                    <span class="data">Fecha: </span>
+                </div>
+                <button type="submit"><a href="#" target="_blank" rel="noopener noreferrer">Enlace a evidencia</a></button>               
+            </div>
+
+        </div>
+
+        <footer class="bibliografia">
+
+            <div class="bio">
+                <h2>Bibliografia</h2>
+        
+                <div class="enlaces">
+                     <p><span>información: </span>
+                         <a href="#" target="_blank" rel="noopener noreferrer">PDF Estructura del SENA y funciones de sus dependencias</a>
+                     </p>
+                     <p><span>Imagenes: </span>
+                         <a href="#" target="_blank" rel="noopener noreferrer"></a>
+                     </p>
+                     <p><span>Backgrounds: </span>
+                         <a href="#" target="_blank" rel="noopener noreferrer"></a>
+                     </p>
+                </div>
+            </div>
+            <div class="autor">
+                <h3>Elkin Javier Quintero</h3>
+                <p>Bogota-2021</p>
+        
+                <div class="copyright">©</div>
+            </div>
+        
+        </footer>
+
+        <!-- <script src="js/funct.js"></script> -->
+    </body>            
+</html>
+
+
+
